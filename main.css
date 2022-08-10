@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --font-color: hsl(215, 51%, 70%);
+    --font-etereum: hsl(178, 100%, 50%);
+    --font-bg: hsl(217, 54%, 11%);
+    --font-card: hsl(216, 50%, 16%);
+    /* --font-color: hsl(215, 32%, 27%); */
+    --font-family: outfit;
+}
+
+body {
+    background-color: var(--font-bg);
+    font-family: var(--font-family);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 290px;
+    height: 450px;
+    background-color: var(--font-card);
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.autor, h3 {
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color .4s;
+}
+
+.cont-img , .eterium {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+} 
+
+.eterium {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+.container :nth-child(3) {
+    color: var(--font-color);
+    font-weight: 300;
+}
+
+.timePrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: .1px solid hsla(215, 52%, 70%, 0.144);
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
+
+.timePrice :first-child {
+    color: var(--font-etereum);
+}
+.timePrice :last-child {
+    color: var(--font-color);
+}
+
+.avatar {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.container :nth-child(5) {
+    display: flex;
+    align-items: center;
+    color: var(--font-color);
+}
+
+/* HOVER */
+
+.autor:hover, h3:hover {
+    color: var(--font-etereum);
+}
+
+.cont-img {
+    position: relative;
+}
+
+.cont-img:before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 3%;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0; 
+    transition: background-color .5s;
+}
+
+.cont-img:hover:before {
+    background-color: hsla(178, 100%, 50%, 0.13);
+    content: url(/images/icon-view.svg);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: rgba(211, 211, 211, 0.527);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
