@@ -110,7 +110,7 @@ span {
 
 .cont-img:hover:before {
     background-color: hsla(178, 100%, 50%, 0.13);
-    content: url(/images/icon-view.svg);
+    content: url(./images/icon-view.svg);
 }
 
 .attribution { 
